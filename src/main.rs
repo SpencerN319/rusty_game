@@ -3,12 +3,12 @@ use rusty_audio::Audio;
 
 fn main() -> Result <(), Box<dyn Error>> {
     let mut audio = Audio::new();
-    audio.add("explode", ".wav");
-    audio.add("lose", ".wav");
-    audio.add("move", ".wav");
-    audio.add("pew", ".wav");
-    audio.add("startup", ".wav");
-    audio.add("win", ".wav");
+    audio.add("explode", "sounds/explode.wav");
+    audio.add("lose", "sounds/lose.wav");
+    audio.add("move", "sounds/move.wav");
+    audio.add("pew", "sounds/pew.wav");
+    audio.add("startup", "sounds/startup.wav");
+    audio.add("win", "sounds/win.wav");
     audio.play("startup");
     //Cleanup
     audio.wait();
